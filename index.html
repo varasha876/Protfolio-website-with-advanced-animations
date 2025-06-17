@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>varalakshmi | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: #f6f8fc;
+      color: #1f2937;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 3rem 2rem;
+      text-align: center;
+      background: linear-gradient(145deg, #ffffff, #dfe7f2);
+      animation: fadeSlideIn 1s ease forwards;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #4f46e5, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientText 3s ease infinite;
+    }
+
+    h2 {
+      margin-top: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .card {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      padding: 2rem;
+      margin: 1rem 0;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      perspective: 1000px;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) rotateX(3deg);
+      box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeSlideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes gradientText {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Contact section styling */
+    .contact {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .contact p {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background: #4f46e5;
+      color: white;
+      border: none;
+      border-radius: 9999px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #3b36d1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>varalakshmi</h1>
+    <h2>Full Stack Developer</h2>
+  </header>
+
+  <section>
+    <div class="card">
+      <h3>About Me</h3>
+      <p>I'm a passionate full-stack developer with a love for building interactive and scalable web apps using modern technologies.</p>
+    </div>
+    <div class="card">
+      <h3>Skills</h3>
+      <p>HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, GSAP, Tailwind CSS, Three.js</p>
+    </div>
+    <div class="card">
+      <h3>Projects</h3>
+      <p>Built interactive UI dashboards, ecommerce platforms, and animated portfolio sites using modern libraries and tools like GSAP and Three.js for 3D effects.</p>
+    </div>
+
+    <div class="contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:varshamadanaa@gmail.com">varshamadanaa@gmail.com</a></p>
+      <p>Phone: 7386743510</p>
+      <a href="mailto:varshamadanaa@gmail.com" class="btn">Say Hello</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 varalakshmi. All rights reserved.
+  </footer>
+
+</body>
+</html>
